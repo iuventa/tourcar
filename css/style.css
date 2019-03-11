@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    overflow: hidden;
+}
+#video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+.opacity{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 2;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 3;
+}
+.sound{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    overflow: hidden;
+    position: absolute;
+    z-index: 4;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.sound img{
+    width: 70%;
+    margin: 0 auto;
+}
+.logo{
+    width:260px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+.logo img{
+    width: 100%;
+}
+.welcome{
+    width: 970px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+.explore{
+    width: 850px;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 27px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.magic{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.followMagic{
+    width: 70px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    font-size: 20px;
+}
