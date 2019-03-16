@@ -348,6 +348,49 @@ body{
 .go-center{
     margin: 0 auto;
 }
+.social-menu{
+    width: 70px;
+    height: 130px;
+    
+    position: absolute;
+    top: 45%;
+
+    left: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    border-bottom: 0;
+}
+.circle-div-social{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255, 0.5);
+    position: absolute;
+    top: 51%;
+
+    left: 4%;
+}
+.img-social-icon{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+.img-social-icon img{
+    width: 100%;
+}
+.img-social-icon:nth-child(1){
+    align-self: flex-start;
+
+}
+.img-social-icon:nth-child(2){
+    align-self: flex-end;
+   
+}
+.img-social-icon:nth-child(3){
+    align-self: flex-start;
+}
 #menu{
     width: 100px;
 
@@ -403,4 +446,60 @@ body{
     text-align: center;
     font-size: 15px;
     color: #ffffff;
+}
+
+/* 404 ********************************************* */
+#page_404{
+    background-color: #1d1b1b;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+}
+.pg404_four{
+    width: 40%;
+    margin: 0 auto;
+    /* color: white; */
+    text-align: center;
+    font-size: 250px;
+    color: white;
+    -webkit-text-fill-color: #1d1b1b; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: transparent;
+    text-shadow: 5px 5px #ec4d37;
+    transition: 2s;
+}
+.pg404_notFound{
+    width: 60%;
+    left:50%;
+    margin-left: -30%;
+    top: 50%;
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    text-transform: uppercase;
+    transition: 2s;
+}
+.pg404_button{
+   
+    left:50%;
+    margin-left: -80px;
+    top: 70%;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #ec4d37;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    text-transform: uppercase;
+    transition: 2s;
+}
+.pg404_button:hover{
+    cursor: pointer;
+ 
+    background-color: #ec4d37;
+    transition: 2s;
 }

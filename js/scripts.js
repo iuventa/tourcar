@@ -1,3 +1,11 @@
+$(document).ready(function(){
+    var pnf=$(".container_style").hasClass("404");
+    if(pnf){
+        $(".menu").css("display", "none");
+        $(".allRight").css("display", "none");
+    }
+})
+
 
 $(document).on("click", ".sound", function(){
     console.log("salome");

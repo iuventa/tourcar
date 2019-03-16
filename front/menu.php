@@ -27,7 +27,7 @@
                     $menu_name="SELECT `name`, `id` from `menu`";
                     $res=$mysql->query($menu_name);
                     while($mass=$res->fetch_assoc()){
-                        echo "<li ".($_REQUEST["pg"]==$mass["id"] ? "class='active'" : "")." link='/tourcar/?pg=".$mass["id"]."' pageId=".$mass["id"].">".$mass["name"]."</li>";
+                        echo "<li ".($_REQUEST["pg"]==$mass["id"] ? "class='active'" : "")." link='?pg=".$mass["id"]."' pageId=".$mass["id"].">".$mass["name"]."</li>";
                     }
                     
                     
@@ -35,5 +35,19 @@
                 </ul>
             </div>
         </div>
+        
     </div>
+    <div class="social-menu">
+        <div class="img-social-icon">
+            <img src="media/images/icon/fb1.png" alt="#">
+        </div>
+        <div class="img-social-icon">
+            <img src="media/images/icon/inst1.png" alt="#">
+        </div>
+        <div class="img-social-icon">
+            <img src="media/images/icon/you1.png" alt="#">
+        </div>
+        
+    </div>
+    <div class="circle-div-social"></div>
 </html>
