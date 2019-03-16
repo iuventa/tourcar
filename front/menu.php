@@ -38,16 +38,28 @@
         
     </div>
     <div class="social-menu">
-        <div class="img-social-icon">
-            <img src="media/images/icon/fb1.png" alt="#">
-        </div>
-        <div class="img-social-icon">
-            <img src="media/images/icon/inst1.png" alt="#">
-        </div>
-        <div class="img-social-icon">
-            <img src="media/images/icon/you1.png" alt="#">
-        </div>
         
+       
+        <div class="circle-div-social"></div>
+        <div class="social-menu-icons">
+            <div class="img-social-icon">
+                <img id="fb" src="media/images/icon/fb1.png" alt="#">
+            </div>
+            <div class="img-social-icon">
+                <img id="inst" src="media/images/icon/inst1.png" alt="#">
+            </div>
+            <div class="img-social-icon">
+                <img id="you" src="media/images/icon/you1.png" alt="#">
+            </div>
+        </div>
+            
     </div>
-    <div class="circle-div-social"></div>
+
+    <div class="search-menu">
+        <div class="close-icon">
+            <img id="close-img" src="media/images/icon/close.png" alt="#">
+        </div>
+        <input type="search" id="search-input" placeholder="search">
+    </div>
+    
 </html>

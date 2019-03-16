@@ -24,7 +24,7 @@
         EXPLORE INCREDIBLE DESTINATIONS AND PLAN YOUR VACATION NOW.
     </h3>
 
-    <div link="?pg=2" class="magic">
+    <div link="?pg=3" class="magic">
         <p class="followMagic">
         Follow The Magic
         </p>
