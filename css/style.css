@@ -623,7 +623,6 @@ body{
 }
 .choose-duration{
     width: 350px;
-  
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
@@ -635,6 +634,7 @@ body{
     border: 2px solid #ffffff;
     display: flex;
     align-items: center;
+    
     
 }
 .duration-circle p{
@@ -700,13 +700,14 @@ body{
 }
 .numbers{
     margin-top: 10px;
-    width: 0px;
+    width: 4px;
     overflow: hidden;
     margin-left: 20%;
     border: 2px solid #ffffff;
     border-radius: 30%;
     display: none;
     justify-content: space-between;
+    
 }
 .numbers-number{
     color: #ffffff;
@@ -720,7 +721,7 @@ body{
 }
 .tour-main{
     width: 100%;
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -736,7 +737,6 @@ body{
 .info{
     width: 50%;
     height: 300px;
-    background-color: blue;
 }
 area[title="vardzia"]{
     background-color: #ec4d37;
@@ -762,4 +762,45 @@ area[title="vardzia"]{
 }
 area[alt=zemo_svaneti]{
     background-color: #ec4d37;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: #ffffff;
+}
+#tour-time{
+    margin-top: 10px;
+}
+#tour-time li{
+    color: #ffffff;
+    font-size: 13px;
+}
+.price-title{
+    width: 30%;
+    color: #ffffff;
+    font-size: 12px;
+}
+.price-title span{
+    font-family: hary;
+}
+.price-person{
+    width: 40%;
+    font-size: 12px;
+}
+.just-space{
+    width: 30%;
+}
+.notLike{
+    color: #ffffff;
+    margin-top: 10px;
+    font-size: 11px;
+}
+.choose-yours{
+    color: #ffffff;
+    font-size: 15px;
+}
+.choose-yours span:hover{
+    color: #ec4d37;
+    cursor: pointer;
 }

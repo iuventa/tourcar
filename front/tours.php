@@ -99,16 +99,26 @@
                
                 <div class="info-about">
                     <h4 class="decription">Detailed Description Of The Tour</h4>
-                    <ul>
-                        <li>sadfsadfsd</li>
-                        <li>asdfasdfsadf</li>
-                        <li>adfasdfsad</li>
-                        <li>adsfasdfasdf</li>
-                        <li>asdfasdfas</li>
-                        <li>adfasdfas</li>
-                        <li>asdfasdfsdfsadf</li>
+                    <ul id="tour-time">
+                        <li>08:00 Going to vardzia from Tbilisi</li>
+                        <li>11:00  visiting the cave town Vardzia (walking, 1.2 km. One way, easy)</li>
+                        <li>14:00  gpicnic</li>
+                        <li>15:30  gvisiting Khertvisi fortress</li>
+                        <li>17:00  gvisiting The Saghamo Lake</li>
+                        <li>18:30  gvisiting Paravani Lake and Poka Monastery</li>
+                        <li>20:00  goint back to Tbilisi</li>
                     </ul>
-
+                    <div class="price">
+                        <p id="price-title">Price: 
+                        <span> 150</span> Gel</p>
+                        <p id="price-person">&#43; Lunch (1 person) <span> 30</span> Gel <br>
+                        &#43; Tickets (1 person) <span> 10</span> Gel
+                        </p>
+                        <div class="just-space"></div>
+                    </div>
+                    <p class="notLike">Dont't you like the tour or time?</p>
+                    <p class="choose-yours">Choose yours <span >&#9660</span> </p>
+                    
                 </div>
             </div>
             

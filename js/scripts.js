@@ -103,22 +103,22 @@ $(document).on("click", "#duration-number-arrow", function(){
       
     }
 })
-var basic_opts = {
-    mapKey: 'alt'
-};
+// var basic_opts = {
+//     mapKey: 'alt'
+// };
 
-var initial_opts = $.extend({},basic_opts, 
-    { 
-        staticState: true,
-        fill: false,
-        stroke: true,
-        strokeWidth: 2,
-        strokeColor: 'ff0000'
-    });
-$('#map').mapster(initial_opts)
-    .mapster('set',true,'imereti', {
-        fill: true,
-        fillColor: '00ff00'
-    })
-    .mapster('snapshot')
-    .mapster('rebind',basic_opts);
+// var initial_opts = $.extend({},basic_opts, 
+//     { 
+//         staticState: true,
+//         fill: false,
+//         stroke: true,
+//         strokeWidth: 2,
+//         strokeColor: 'ff0000'
+//     });
+// $('#map').mapster(initial_opts)
+//     .mapster('set',true,'imereti', {
+//         fill: true,
+//         fillColor: '00ff00'
+//     })
+//     .mapster('snapshot')
+//     .mapster('rebind',basic_opts);
