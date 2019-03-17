@@ -84,3 +84,41 @@ $(document).on("click", "#close-img", function(){
         $(".search-menu").animate({width: "0px"}, 800);
 
 })
+$(document).on("click", "#duration-number-arrow", function(){
+    
+    if( $(".numbers").css("width")=="4px"){
+        $(".numbers").animate({ width: "60%"}, 800);
+        setTimeout(function(){
+            $(".numbers").css("padding", "5px 20px");
+            $(".numbers").css("display", "flex");
+            }, 200);
+       
+    }
+    else{
+        $(".numbers").animate({ width: "4px"}, 800);
+        setTimeout(function(){
+        $(".numbers").css("padding", "0px 0px");
+        $(".numbers").css("display", "none");
+        }, 500);
+      
+    }
+})
+var basic_opts = {
+    mapKey: 'alt'
+};
+
+var initial_opts = $.extend({},basic_opts, 
+    { 
+        staticState: true,
+        fill: false,
+        stroke: true,
+        strokeWidth: 2,
+        strokeColor: 'ff0000'
+    });
+$('#map').mapster(initial_opts)
+    .mapster('set',true,'imereti', {
+        fill: true,
+        fillColor: '00ff00'
+    })
+    .mapster('snapshot')
+    .mapster('rebind',basic_opts);

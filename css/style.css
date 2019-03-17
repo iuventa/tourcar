@@ -611,3 +611,155 @@ body{
     color: #ec4d37;
     box-shadow: 0px 0px 20px inset #ec4d37;
 }
+.tours{
+    display: none;
+}
+.choose-tour{
+  
+    width: 90%;
+    margin: 0 auto;
+    height: 90%;
+    
+}
+.choose-duration{
+    width: 350px;
+  
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.duration-circle{
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+    
+}
+.duration-circle p{
+    margin:  auto;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+  
+}
+
+.back{
+    width: 50px;
+    height: 50px;
+}
+.duration-number{
+    width: 100px;
+    height: 100px;
+}
+.duration-day{
+    width: 100px;
+    height: 100px;
+    line-height: 40px;
+}
+.go{
+    width: 50px;
+    height: 50px;
+}
+.duration-arrow{
+    transform:rotate(90deg);
+}
+.week-top{
+    padding-top: 5px;
+    border-top: 2px solid #ffffff;
+}
+#duration-number-arrow:hover{
+    cursor: pointer;
+    color: #ec4d37;
+}
+.back:hover{
+    cursor: pointer;
+   
+    border: 2px solid #ec4d37;
+}
+.back:hover .back-p{
+    color: #ec4d37;
+}
+#duration-day-span:hover{
+    cursor: pointer;
+    color: #ec4d37;
+}
+.week-top:hover{
+    cursor: pointer;
+    color: #ec4d37;
+}
+.go:hover{
+    cursor: pointer;
+   
+    border: 2px solid #ec4d37;
+}
+.go:hover .duration-circle-p{
+    cursor: pointer;
+    color: #ec4d37;
+}
+.numbers{
+    margin-top: 10px;
+    width: 0px;
+    overflow: hidden;
+    margin-left: 20%;
+    border: 2px solid #ffffff;
+    border-radius: 30%;
+    display: none;
+    justify-content: space-between;
+}
+.numbers-number{
+    color: #ffffff;
+    font-size: 15px;
+    font-family: hary;
+}
+.numbers-number:hover{
+    cursor: pointer;
+    color: #ec4d37;
+    font-weight: bold;
+}
+.tour-main{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.map{
+    width: 500px;
+    overflow: hidden;
+}
+.map img{
+    width: 500px;
+}
+.info{
+    width: 50%;
+    height: 300px;
+    background-color: blue;
+}
+area[title="vardzia"]{
+    background-color: #ec4d37;
+}
+.info-title{
+    display:flex;
+    justify-content: space-between;
+}
+#place{
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+.info-about{
+    width: 100%;
+    margin-top: 20px;
+    
+}
+.decription{
+    color: #ffffff;
+}
+area[alt=zemo_svaneti]{
+    background-color: #ec4d37;
+}
