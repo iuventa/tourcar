@@ -103,22 +103,45 @@ $(document).on("click", "#duration-number-arrow", function(){
       
     }
 })
-// var basic_opts = {
-//     mapKey: 'alt'
-// };
 
-// var initial_opts = $.extend({},basic_opts, 
-//     { 
-//         staticState: true,
-//         fill: false,
-//         stroke: true,
-//         strokeWidth: 2,
-//         strokeColor: 'ff0000'
-//     });
-// $('#map').mapster(initial_opts)
-//     .mapster('set',true,'imereti', {
-//         fill: true,
-//         fillColor: '00ff00'
-//     })
-//     .mapster('snapshot')
-//     .mapster('rebind',basic_opts);
+
+
+/* *************** map ***************** */
+
+$(document).ready(function ()
+{
+    $('area[alt*="UPPER"]').each(function () //get all areas
+    {
+        $(this).addClass("victory");
+    });
+
+    $('area[alt*="LOWER"]').each(function () //get all areas
+    {
+        $(this).addClass("lose");
+    });
+
+    //initialize highlight როგორ შეიცვალოს ფერი
+    $('.image-map').maphilight({
+        strokeWidth: 0,
+        strokeColor: "ffffff",
+        fillColor: "ec4d37",
+        fillOpacity: 0.8,
+        singleSelect: true
+    });
+
+    ////map wrap
+    $(".victory").wrap(function () {
+        //This block is what creates highlighting by trigger the "alwaysOn", 
+        var data = $(this).data('maphilight') || {};
+        data.alwaysOn = !data.alwaysOn;
+        $(this).data('maphilight', data).trigger('alwaysOn.maphilight');
+        //there is also "neverOn" in the docs, but not sure how to get it to work
+    });
+    $(".lose").wrap(function () {
+        //This block is what creates highlighting by trigger the "alwaysOn", 
+        var data = $(this).data('maphilight') || {};
+        data.alwaysOn = !data.alwaysOn;
+        $(this).data('maphilight', data).trigger('alwaysOn.maphilight');
+        //there is also "neverOn" in the docs, but not sure how to get it to work
+    });
+});

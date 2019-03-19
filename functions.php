@@ -12,7 +12,7 @@ function get_js(){
     global $rand;
     $js=" <script src='js/jquery-3.3.1.min.js'></script>
            <script src='js/jquery-ui.min.js'></script>
-        
+           <script src='js/jquery.maphilight.min.js'></script>
            <script src='js/scripts.js?v=".$rand."'></script>
             ";
 
