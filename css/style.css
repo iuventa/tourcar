@@ -615,7 +615,7 @@ body{
     display: none;
 }
 .choose-tour{
-  
+    display: block;
     width: 90%;
     margin: 0 auto;
     height: 90%;
@@ -648,6 +648,7 @@ body{
 .back{
     width: 50px;
     height: 50px;
+   
 }
 .duration-number{
     width: 100px;
@@ -731,6 +732,7 @@ body{
     width: 500px;
     overflow: hidden;
 }
+
 .map img{
     width: 500px;
 }

@@ -84,6 +84,7 @@ $(document).on("click", "#close-img", function(){
         $(".search-menu").animate({width: "0px"}, 800);
 
 })
+
 $(document).on("click", "#duration-number-arrow", function(){
     
     if( $(".numbers").css("width")=="4px"){
@@ -104,7 +105,28 @@ $(document).on("click", "#duration-number-arrow", function(){
     }
 })
 
+$(document).on("click", ".tour-duration", function(){
+    setTimeout(function(){
+        setTimeout(function(){
+            $(".tours").animate({ opacity: "0"}, 800);
+            }, 800);
+            $(".tours").css("display", "none");
+            $(".choose-tour").css("display", "block");
+            $(".choose-tour").animate({ opacity: "1"}, 800);
+            }, 500);
+})
 
+
+$(document).on("click", ".back", function(){
+    setTimeout(function(){
+        $(".choose-tour").animate({ opacity: "0"}, 800);
+        }, 800);
+        $(".choose-tour").css("display", "none");
+        $(".tours").css("display", "block");
+    setTimeout(function(){
+        $(".tours").animate({ opacity: "1"}, 800);
+        }, 500);
+})
 
 /* *************** map ***************** */
 
